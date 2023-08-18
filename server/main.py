@@ -24,8 +24,6 @@ def process_data():
     if assemblyAiKey is None or openAiKey is None:
         return jsonify({"error": "Both API keys are required"}), 400
     
-    print(assemblyAiKey)
-    print(openAiKey)
     if assemblyAiKey and openAiKey:
         url = request.json.get('url')
         if url:
